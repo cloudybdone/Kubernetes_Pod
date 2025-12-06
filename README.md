@@ -216,28 +216,6 @@ kubectl get pods -A
 
 ---
 
-# 4. Useful Commands
 
-### Reset a node:
 
-```bash
-sudo kubeadm reset -f
-```
-
-### Remove Kubernetes completely:
-
-```bash
-sudo apt purge kubeadm kubectl kubelet -y
-sudo rm -rf /etc/kubernetes ~/.kube
-```
-
----
-
-# 🎉 Setup Complete
-
-You now have:
-✔ **Minikube** for local development
-✔ **kubeadm Kubernetes Cluster** for production or multi-node setup
-
----
 
