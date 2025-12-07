@@ -3,7 +3,7 @@
 
 ### (Minikube Installation + kubeadm Cluster Installation)
 
-## 📌 Overview
+## Overview
 
 This guide explains how to install and run **Minikube** (single-node Kubernetes for local use) and how to build a **multi-node Kubernetes cluster using kubeadm** on **Debian 12/11**.
 
@@ -11,19 +11,19 @@ This guide explains how to install and run **Minikube** (single-node Kubernetes 
 
 # 1. Install Minikube on Debian
 
-## ✅ Step 1 — Update System
+##  Step 1 — Update System
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-## ✅ Step 2 — Install Required Tools
+##  Step 2 — Install Required Tools
 
 ```bash
 sudo apt install -y curl wget apt-transport-https ca-certificates conntrack
 ```
 
-## ✅ Step 3 — Install Docker (container runtime)
+##  Step 3 — Install Docker (container runtime)
 
 ```bash
 sudo apt install -y docker.io
@@ -37,14 +37,14 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
-## ✅ Step 4 — Download Minikube Binary
+##  Step 4 — Download Minikube Binary
 
 ```bash
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
 sudo dpkg -i minikube_latest_amd64.deb
 ```
 
-## ✅ Step 5 — Start Minikube
+##  Step 5 — Start Minikube
 
 ```bash
 minikube start --driver=docker
@@ -63,7 +63,7 @@ minikube status
 
 (For Production / Multi-Node Cluster)
 
-## 📌 Supported Debian Versions
+##  Supported Debian Versions
 
 * Debian 12 (Bookworm)
 * Debian 11 (Bullseye)
@@ -72,14 +72,14 @@ minikube status
 
 # 2.1 Prepare All Nodes (Master + Worker)
 
-## ✅ Step 1 — Disable Swap (required by kubeadm)
+## Step 1 — Disable Swap (required by kubeadm)
 
 ```bash
 sudo swapoff -a
 sudo sed -i '/swap/d' /etc/fstab
 ```
 
-## ✅ Step 2 — Load Kubernetes Kernel Modules
+##  Step 2 — Load Kubernetes Kernel Modules
 
 ```bash
 sudo tee /etc/modules-load.d/k8s.conf <<EOF
