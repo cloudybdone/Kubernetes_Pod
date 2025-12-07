@@ -50,7 +50,7 @@ sudo dpkg -i minikube_latest_amd64.deb
 minikube start --driver=docker
 ```
 
-## 🔍 Verify
+##  Verify
 
 ```bash
 kubectl get nodes
