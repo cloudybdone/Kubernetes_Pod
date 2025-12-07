@@ -189,12 +189,6 @@ On the master node get the join command:
 kubeadm token create --print-join-command
 ```
 
-Example output:
-
-```
-kubeadm join 10.0.0.10:6443 --token abcdef.0123456789abcdef \
-    --discovery-token-ca-cert-hash sha256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
 
 Run the command on each **worker node**.
 
