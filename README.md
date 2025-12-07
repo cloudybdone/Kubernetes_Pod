@@ -5,7 +5,7 @@
 
 ## Overview
 
-This guide explains how to install and run **Minikube** (single-node Kubernetes for local use) and how to build a **multi-node Kubernetes cluster using kubeadm** on **Debian 12/11**.
+This docs explains how to install and run **Minikube** (single-node Kubernetes for local use) and how to build a **multi-node Kubernetes cluster using kubeadm** on **Debian 12/11**.
 
 ---
 
