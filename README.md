@@ -172,7 +172,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.2/manifests/calico.yaml
 ```
-
+![Alt text](https://github.com/cloudybdone/Kubernetes_Pod/blob/main/Screenshot%20from%202025-12-06%2021-58-28.png)
 Check:
 
 ```bash
@@ -202,6 +202,7 @@ Run the command on each **worker node**.
 ```bash
 kubectl get nodes
 ```
+![Alt text](https://github.com/cloudybdone/Kubernetes_Pod/blob/main/Screenshot%20from%202025-12-06%2022-00-11.png)
 
 ### Check system pods:
 
