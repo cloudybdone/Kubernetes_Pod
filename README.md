@@ -8,6 +8,7 @@
 This docs explains how to install and run **Minikube** (single-node Kubernetes for local use) and how to build a **multi-node Kubernetes cluster using kubeadm** on **Debian 12/11**.
 
 ---
+![Alt text](https://github.com/cloudybdone/Kubernetes_Pod/blob/main/Screenshot%20from%202025-12-06%2011-55-42.png)
 
 # 1. Install Minikube on Debian
 
